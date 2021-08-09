@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9.6
+        python-version: 3.9
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -38,7 +38,7 @@ jobs:
     - uses: akhileshns/heroku-deploy@v3.12.12
       with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "master-cs-yahoo-finance"
+          heroku_app_name: "app"
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           buildpack: 'heroku/python'
-          usedocker: true
+          usedocker: false

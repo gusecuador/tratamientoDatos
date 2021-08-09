@@ -9,9 +9,9 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
 
-@app.route("/")
-def hello_world():
-    return "<p>Hola mundo!</p>"
+#@app.route("/")
+#def hello_world():
+#    return "<p>Hola mundo!</p>"
 
 
 @app.route("/get-price/<ticker>")

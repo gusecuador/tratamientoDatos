@@ -41,4 +41,4 @@ jobs:
           heroku_app_name: "appgasqui2021"
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           buildpack: 'heroku/python'
-          usedocker: true
+          usedocker: false

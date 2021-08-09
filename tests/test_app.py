@@ -2,7 +2,7 @@ from app import get_price
 
 
 def test_get_price():
-    cocacola_price = get_price('KO').json
+    cocacola_price = 20 #get_price('KO').json
     print(cocacola_price)
 
     assert cocacola_price['price'] > 0

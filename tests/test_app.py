@@ -4,8 +4,8 @@ from app import get_price
 def test_get_price():
     cocacola_price = {
     "price":20,
-    "name":"Coca cola",
-    "exchange":"F",
+    "name":"The Coca-Cola Company",
+    "exchange":"NYSE",
     "currency":"USD",
    
     } 

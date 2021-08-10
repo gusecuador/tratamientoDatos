@@ -1,7 +1,8 @@
+from app import get_price
 def test_get_price():
     cocacola_price = {
     "price":20,
-    "name":"Coca cola",
+    "name":"The Coca-Cola Company",
     "exchange":"F",
     "currency":"USD",
     } 
@@ -14,4 +15,3 @@ def test_get_price():
     assert cocacola_price['currency'] == 'USD'
 
     # assert get_price('KSLAFSADF').status_code == 404
-test_get_price()

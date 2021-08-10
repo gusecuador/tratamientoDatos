@@ -2,7 +2,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master
+      - app_tratamiento_datos
 jobs:
   build:
     runs-on: ubuntu-latest

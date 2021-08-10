@@ -1,4 +1,3 @@
-from app import get_price
 def test_get_price():
     cocacola_price = {
     "price":20,

@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 @app.route("/")
 def hello_world():
-       return "<p>Hello, World!</p>"
+    return "<p>Hello, World!</p>"
 
 
 @app.route("/get-price/<ticker>")
@@ -22,7 +22,7 @@ def get_price(ticker):
     response = requests.get(url,headers=headers)
     #response = requests.get(url)
     company_info = response.json()
-    app.logger.info(f"Requested ticker: {ticker}")
+    #app.logger.info(f"Requested ticker: {ticker}")
 
     if response.status_code > 400:
         app.logger.info(f"Yahoo has problem with ticker: {ticker}.")
